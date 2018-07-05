@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a:link,a:visited,a:active{
+            text-decoration: none;
+            color:black;
+        }
+
+        #nav {
+            width: 100%;
+            background: #3E3D3E;
+            height: 80px;
+            line-height: 80px;
+        }
+
+        #nav-container {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        #nav ul {
+            list-style: none;
+            display: inline-block;
+            float: left;
+        }
+
+        #nav ul::after,#nav-container::after{
+            display: block;
+            content:"";
+            clear:both;
+        }
+
+        #nav ul li {
+            float: left;
+            color: white;
+        }
+
+        #nav ul li a{
+            color: white;
+            padding:0 30px;
+        }
+
+        #logo {
+            color: white;
+            float: left;
+            display: inline-block;
+            font-size: 1.5em;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #bag{
+            display: inline-block;
+            height: 80px;
+            line-height: 80px;
+            float:left;
+            padding-left: 30px;
+            padding-top:5px;
+        }
+
+        #bag img{
+            width:20px;
+        }
+
+        #imageShow{
+            width:100%;
+            min-height:800px;
+            background: url("image/ww.jpg");
+            background-size:cover;
+            position: relative;
+        }
+
+        #imageShow .box1{
+            background:rgba(255,255,255,0.7);
+            width:30%;
+            height:200px;
+            position: absolute;
+            top:50%;
+            left:35%;
+            text-align: center;
+        }
+
+        #imageShow .box1 div {
+            text-align: center;
+            padding:30px 0;
+        }
+
+        #imageShow .box1 div span{
+            color: black;
+            font-size: 2em;
+        }
+
+        #imageShow .box1 a{
+            display: inline-block;
+            background:black;
+            color:white;
+            padding: 10px 20px;
+        }
+
+        #text-section{
+            width:100%;
+            height:40px;
+            line-height:40px;
+            background: #afafaf;
+            text-align: center;
+        }
+
+        #text-section span{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<nav id="nav">
+    <div id="nav-container">
+        <div id="logo">
+            <pre>P R E T T Y  G A L</pre>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Customer Care</a></li>
+            <li><a href="#">Stockists</a></li>
+        </ul>
+        <div id="bag">
+            <img src="image/bag.png" />
+        </div>
+    </div>
+</nav>
+
+<section id="imageShow">
+    <div class="box1">
+        <div>
+            <span>FALL & WINTER</span>
+        </div>
+        <a>Shop Now</a>
+    </div>
+</section>
+<section id="text-section">
+    <span>FREE SHIPPING WORLWIDE</span>
+</section>
+<section>
+
+</section>
+<footer>
+
+</footer>
+</body>
+</html>
