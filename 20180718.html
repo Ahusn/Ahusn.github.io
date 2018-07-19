@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta charset="UTF-8">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            position: relative;
+        }
+
+        @media (min-width:320px) and (max-width: 479px) {
+            .body {
+                background: blue;
+                width: 100vw;
+                height: 100vh;
+            }
+        }
+
+        @media (min-width:480px) and (max-width: 767px) {
+
+            .body {
+                height: 50px;
+                width: 50px;
+                background: red;
+                position: fixed;
+                top: calc(50% - 25px);
+                left: calc(50% - 25px);
+            }
+        }
+
+        @media (min-width:768px) and (max-width: 1199px) {
+            .body {
+                background: green;
+                position: fixed;
+                width: 100vw;
+                height: 20px;
+                bottom: 0;
+            }
+        }
+
+        @media (min-width:1200px) and (max-width: 1439px) {
+            .body {
+                background: orange;
+                width: 100vw;
+                position: fixed;
+                top: 0;
+                color: white;
+                
+            }
+            .body::after{
+                content:"阿勛";
+                display: block;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        
+    </div>
+</body>
+
+</html>
